@@ -1,3 +1,4 @@
+```bash
 git add . // 添加所有目录内文件
 * .gitignore 
 	-> *.exe 不要上传 通配（几个文件夹内的） exe后缀文件
@@ -20,3 +21,4 @@ git remote add origin + git reporsitory's https address //远程添加git origin
 	eg.  https://github.com/papadate/gostudy.git
 git push -u origin <your branch name>
 	eg. git push -u origin master
+```
