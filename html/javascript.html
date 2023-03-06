@@ -22,5 +22,42 @@
         <br>
         <button onclick="getElementById('text').innerHTML = Date()">Time</button>
         <p id="text"></p>
+
+        <script>
+            var num1 = 1;
+            var str1 = new String("I am String Object");
+            function showNum()
+            {
+                document.getElementById("test").innerHTML = num1;
+            }
+            function showString()
+            {
+                document.getElementById("test").innerHTML = str1;
+            }
+            function showType()
+            {
+                document.getElementById("test").innerHTML = typeof num1 + " | " + typeof str1;
+            }
+        </script>
+        <button onclick="showNum()">num1</button>
+        <button onclick="showString()">str1</button>
+        <br>
+        <button onclick="showType()">type</button>
+        <p id="test"></p>
+        <br>
+        <button onclick="showTime()">start</button>
+        <script>
+            function showTime()
+            {
+                document.getElementById("time").innerHTML = "1";
+                var str1 = "";
+                while (10)
+                {
+                    str1 = Date.getSeconds();
+                    document.getElementById("time").innerHTML = str1;
+                }
+            }
+        </script>
+        <p id="time"></p>
     </body>
 </html>
