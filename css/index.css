@@ -2,3 +2,16 @@ p
 {
     color: goldenrod;
 }
+ol > *:first-child
+{
+    font-style: italic;
+    font-size: 23px;
+}
+ol > li:last-child
+{
+    font-style: italic;
+}
+ol > li:nth-child(even)
+{
+    color: brown;
+}
