@@ -2,16 +2,34 @@ p
 {
     color: goldenrod;
 }
-ol > *:first-child
+/* ol > *:first-child
 {
     font-style: italic;
     font-size: 23px;
-}
-ol > li:last-child
+} */
+/* ol > li:last-child
+{
+    font-style: italic;
+} */
+/* ol > li:nth-child(even)
+{
+    color: brown;
+} */
+ol > *
 {
     font-style: italic;
 }
-ol > li:nth-child(even)
+a:link
 {
-    color: brown;
+    color: goldenrod;
+    font-style: italic;
+}
+a:visited
+{
+    color: grey;
+}
+a:hover
+{
+    color:black;
+    font-weight:bold;
 }
