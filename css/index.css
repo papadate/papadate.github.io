@@ -21,7 +21,7 @@ ol > *
 }
 a:link
 {
-    color: rgba(74, 29, 235, 0.438);
+    color:orange;
     font-style: italic;
 }
 a:visited
@@ -35,5 +35,5 @@ a:hover
 }
 *::selection
 {
-    background-color: rgb(250, 214, 184);
+    background-color: rgb(255, 233, 181);
 }
