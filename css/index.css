@@ -21,7 +21,7 @@ ol > *
 }
 a:link
 {
-    color: goldenrod;
+    color: rgba(74, 29, 235, 0.438);
     font-style: italic;
 }
 a:visited
@@ -32,4 +32,8 @@ a:hover
 {
     color:black;
     font-weight:bold;
+}
+*::selection
+{
+    background-color: rgb(250, 214, 184);
 }
