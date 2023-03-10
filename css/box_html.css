@@ -12,7 +12,8 @@ body {
 .round {
     border-radius: 10px;
 }
-#profile_photo{
+
+#profile_photo {
     margin: 10px 0px;
     outline: 5px;
     background-color: aliceblue;
@@ -22,39 +23,52 @@ body {
     box-shadow: 0px 0px 200px black;
     /* float: left; */
 }
-.block{
+
+/* #photo{
+    width: 10%;
+    height: 100%;
+} */
+.block {
     height: 100%;
     float: left;
 }
-#block1{
+
+#block1 {
     width: 20px;
 }
-img{
+
+img {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0px 0px 15px rgb(255, 255, 255);
 }
-#name_des{
-    width: 80%;
+
+#name_des {
+    /* width: 100%; */
     /* background-color: white; */
 }
-.float{
+
+.float {
     float: left;
 }
-#div_name{
+
+#div_name {
     margin: 20px 10px 0px;
 }
-#name{
+
+#name {
     font-size: 130%;
     font-weight: bold;
     font-style: italic;
     color: rgba(233, 227, 227, 0.803);
     text-shadow: rgb(21, 199, 128) 1px 0 10px;
 }
-#div_des{
+
+#div_des {
     margin: 13px 10px 5px 10px;
 }
-#des{
+
+#des {
     font-size: xx-small;
     font-weight: bold;
     font-style: oblique;
