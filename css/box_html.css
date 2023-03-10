@@ -100,4 +100,7 @@ img {
     border-radius: 15%;
     box-shadow: 0px 0px 5px black;
     border-style: dashed;
+    border-color: black;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
 }
