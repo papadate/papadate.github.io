@@ -1,11 +1,57 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <title>Home Page</title>
-        <!--<link rel="stylesheet" type="text/css" href="./css/index.css">-->
-    </head>
-    <body>
-        <!--This is comment-->
-        <a href="html/TestPage.html">TestPage</a>
-    </body>
+
+<head>
+    <meta charset="UTF-8" name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>box page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/box_html.css">
+</head>
+
+<body>
+    <div id="top_bar" class="round">
+        <!-- profile photo -->
+
+        <div id="block1" class="block"></div>
+        <nav id="profile_photo" class="float">
+            <a href="https://github.com/papadate">
+            <img src="./src/image/profile_photo.jpeg" alt="photo">
+        </a>
+        </nav>
+        <div id="block1" class="block"></div>
+
+
+        <!-- Name / Description -->
+        <div id="name_des" class="block float">
+            <ul>
+                <!-- name -->
+                <li>
+                    <div id="div_name">
+                        <p>
+                            <a id="name" href="https://github.com/papadate">Papadate</a>
+                        </p>
+                    </div>
+                </li>
+                <!-- description -->
+                <li>
+                    <div id="div_des">
+                        <p id="des">Pour my hear into any tiny things!~</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- test feature -->
+        <div id="div_test">
+            <button id="test_button" onclick="test()">测试</button>
+            <script>
+                function test()
+                {
+                    window.location.href="./html/TestPage.html";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
 </html>
