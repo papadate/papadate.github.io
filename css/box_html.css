@@ -42,12 +42,21 @@ img{
     float: left;
 }
 #div_name{
-    margin: 25px 10px;
+    margin: 20px 10px 0px;
 }
 #name{
     font-size: 130%;
     font-weight: bold;
     font-style: italic;
-    color: rgba(0, 27, 32, 0.803);
+    color: rgba(233, 227, 227, 0.803);
     text-shadow: rgb(21, 199, 128) 1px 0 10px;
+}
+#div_des{
+    margin: 13px 10px 5px 10px;
+}
+#des{
+    font-size: xx-small;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(78, 70, 70);
 }
