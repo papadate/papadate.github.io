@@ -84,14 +84,14 @@
             </div>
             <div id="music">
                 <audio id="source" src="./src/audio/love trade.mp3"></audio>
-                <div>
-                    <button class="music_control" onclick="playme()">点击播放</button>
-                    <button class="music_control" onclick="pauseme()">点击暂停</button>
+                <div id="button_div">
+                    <button class="music_control" onclick="playme()">播放</button>
+                    <button class="music_control" onclick="pauseme()">暂停</button>
                 </div>
                
                <script>
                 var music = document.getElementById("source");
-                music.preload();
+                // music.preload();
                 function playme()
                 {
                     music.play();
