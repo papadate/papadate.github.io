@@ -79,6 +79,29 @@
                     </a>
                 </div>
             </div>
+            <div id="music_name">
+                <p>音乐： 爱情买卖</p>
+            </div>
+            <div id="music">
+                <audio id="source" src="../src/audio/love trade.mp3"></audio>
+                <div>
+                    <button class="music_control" onclick="playme()">点击播放</button>
+                    <button class="music_control" onclick="pauseme()">点击暂停</button>
+                </div>
+               
+               <script>
+                var music = document.getElementById("source");
+                music.preload();
+                function playme()
+                {
+                    music.play();
+                }
+                function pauseme()
+                {
+                    music.pause();
+                }
+               </script>
+            </div>
         </div>
 </body>
 

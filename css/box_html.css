@@ -72,62 +72,74 @@ img {
     color: rgb(78, 70, 70);
     text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
-#des:hover{
+
+#des:hover {
     color: rgba(236, 236, 236, 0.845);
     /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
 }
-#name:hover{
+
+#name:hover {
     color: rgba(236, 236, 236, 0.845);
     /* text-shadow: rgb(21, 199, 128) 1px 0 10px; */
 }
-#div-test{
+
+#div-test {
     background-color: black;
     height: 100%;
     /* float: right; */
 }
-#div_test{
+
+#div_test {
     margin-right: 10px;
     margin-top: 25px;
     float: right;
 }
-#test_button{
+
+#test_button {
     background-color: rgba(6, 79, 79, 0.337);
     border-radius: 15%;
     box-shadow: 0px 0px 5px black;
     border-style: dashed;
     border-color: black;
     font-weight: bold;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
-#main{
+
+#main {
     margin-left: 10px;
 }
-.side{
+
+.side {
     background-color: rgba(190, 255, 255, 0.5);
     width: 150px;
 }
-.side2{
+
+.side2 {
     /* background-color: rgba(190, 255, 255, 0.5); */
     width: 149px;
 }
-#side_title > p{
+
+#side_title>p {
     color: rgba(11, 60, 237, 0.845);
     margin: 5px 0px;
     text-align: center;
     font-weight: bold;
 }
-#side_title{
+
+#side_title {
     display: inline-block;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-#side_content{
+
+#side_content {
     background-color: rgba(237, 243, 248, 0.479);
     width: 150px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#side_content > div > a{
+
+#side_content>div>a {
     display: block;
     text-align: center;
     /* margin: 20px auto; */
@@ -138,9 +150,33 @@ img {
     font-weight: bold;
     text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
-#side_content > div > a:hover{
+
+#side_content>div>a:hover {
     text-shadow: rgba(3, 27, 132, 0.648) 1px 0 10px;
 }
-#side_content > div{
+
+#side_content>div {
     border-top: rgba(3, 27, 132, 0.648) 2px solid;
+}
+#music{
+    float: left;
+    /* margin: 5px 36px; */
+    /* background-color: white; */
+}
+.music_control{
+    background-color: rgba(6, 79, 79, 0.337);
+    border-radius: 15%;
+    box-shadow: 0px 0px 5px black;
+    border-style: solid;
+    border-color: black;
+    font-weight: bold;
+    color: rgba(10, 32, 141, 0.6);
+}
+#music_name{
+    float: left;
+    /* padding-top: 10px; */
+    margin: 10px 15px 5px;
+}
+#music_name > p{
+    text-shadow: rgb(255, 255, 255) 2px 0 10px;
 }
