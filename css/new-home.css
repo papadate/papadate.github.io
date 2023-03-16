@@ -1,0 +1,13 @@
+#header{
+    display: block;
+    /* text-align: center; */
+    background-color: yellowgreen;
+    height: 200px;
+    margin: 10px 5%;
+    /* overflow: hidden; */
+}
+#header > p{
+    float: left;
+    margin: 0px 5px;
+    font-size: 200px;
+}
