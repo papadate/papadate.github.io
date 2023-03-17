@@ -37,7 +37,7 @@
         }
 
         #top_bar a {
-            color: #520e0e;
+            color: #380707;
             text-decoration: none;
         }
 
@@ -45,7 +45,11 @@
         #location {
             float: left;
         }
-
+        #current_city:hover {
+            outline: rgba(0, 0, 0, 0.529);
+            outline-width: 1px;
+            outline-style: solid;
+        }
         #menu {
             float: right;
         }
@@ -53,11 +57,37 @@
         #menu li {
             float: left;
             /* 间距 */
-            margin-left: 30px;
+            margin-left: 25px;
         }
         #current_city:hover, #menu > li:hover, #top_bar a:hover{
             background-color: #9d9b9b;
             color: #fff;
+        }
+        #city_list {
+            width: 30%;
+            position: absolute;
+            display: none;
+            background-color: white;
+            outline: rgba(0, 0, 0, 0.529);
+            outline-width: 1px;
+            outline-style: solid;
+        }
+        #city_list li {
+            float: left;
+            display: block;
+            width: 25%;
+        }
+        #city_list li:hover{
+            background-color: #9d9b9b;
+            color: #fff;
+        }
+        #city_list li a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        #location:hover #city_list {
+            display: block;
         }
     </style>
 </head>
@@ -70,6 +100,79 @@
                 <div id="current_city">
                     <i class="fas fa-compass"></i>
                     <a href="#">伯明翰</a>
+                </div>
+                <div id="city_list">
+                    <ul>
+                        <li>
+                            <a href="#">伦敦</a>
+                        </li>
+                        <li>
+                            <a href="#">曼彻斯特</a>
+                        </li>
+                        <li>
+                            <a href="#">伯明翰</a>
+                        </li>
+                        <li>
+                            <a href="#">利物浦</a>
+                        </li>
+                        <li>
+                            <a href="#">爱丁堡</a>
+                        </li>
+                        <li>
+                            <a href="#">布里斯托尔</a>
+                        </li>
+                        <li>
+                            <a href="#">格拉斯哥</a>
+                        </li>
+                        <li>
+                            <a href="#">利兹</a>
+                        </li>
+                        <li>
+                            <a href="#">纽卡斯尔</a>
+                        </li>
+                        <li>
+                            <a href="#">诺丁汉</a>
+                        </li>
+                        <li>
+                            <a href="#">斯旺西</a>
+                        </li>
+                        <li>
+                            <a href="#">牛津</a>
+                        </li>
+                        <li>
+                            <a href="#">剑桥</a>
+                        </li>
+                        <li>
+                            <a href="#">伯明翰</a>
+                        </li>
+                        <li>
+                            <a href="#">利物浦</a>
+                        </li>
+                        <li>
+                            <a href="#">爱丁堡</a>
+                        </li>
+                        <li>
+                            <a href="#">布里斯托尔</a>
+                        </li>
+                        <li>
+                            <a href="#">格拉斯哥</a>
+                        </li>
+                        <li>
+                            <a href="#">利兹</a>
+                        </li>
+                        <li>
+                            <a href="#">纽卡斯尔</a>
+                        </li>
+                        <li>
+                            <a href="#">诺丁汉</a>
+                        </li>
+                        <li>
+                            <a href="#">斯旺西</a>
+                        </li>
+                        <li>
+                            <a href="#">牛津</a>
+                        </li>
+                        <li>
                 </div>
             </div>
             <!-- 右侧菜单 -->
