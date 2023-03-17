@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="../src/icon/css/all.css">
+    <style>
+        .clearfix::before,
+        ::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 外部容器 */
+        #top_bar_wrapper {
+            /* 宽度100% */
+            width: 100%;
+            background-color: rgba(165, 165, 165, 0.529);
+            /* 行高 30px */
+            line-height: 30px;
+            /* 边框颜色 */
+            border: 1px solid #0b0b0b;
+        }
+
+        #top_bar {
+            font-size: 13px;
+            width: 85%;
+            /* 水平居中 */
+            margin: 0 auto;
+            /* background-color: red; */
+        }
+
+        #top_bar a {
+            color: #520e0e;
+            text-decoration: none;
+        }
+
+        /* location */
+        #location {
+            float: left;
+        }
+
+        #menu {
+            float: right;
+        }
+
+        #menu li {
+            float: left;
+            /* 间距 */
+            margin-left: 30px;
+        }
+        #current_city:hover, #menu > li:hover, #top_bar a:hover{
+            background-color: #9d9b9b;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top_bar_wrapper">
+        <div id="top_bar">
+            <!-- 左侧城市选择 -->
+            <div id="location">
+                <div id="current_city">
+                    <i class="fas fa-compass"></i>
+                    <a href="#">伯明翰</a>
+                </div>
+            </div>
+            <!-- 右侧菜单 -->
+            <ul id="menu">
+                <li>
+                    <i class="fas fa-user"></i>
+                    <a href="#">
+                        <span>登录</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-user-plus"></i>
+                    <a href="#">
+                        <span>注册</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#">
+                        <span>购物车</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-heart"></i>
+                    <a href="#">
+                        <span>收藏夹</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="#">
+                        <span>联系我们</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
