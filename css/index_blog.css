@@ -1,0 +1,42 @@
+html{
+    min-width: 1260px;
+}
+.top_bar{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: inline-flex;
+}
+.top_bar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.left_section{
+    width: 70%;
+    display: flex;
+}
+.right_section{
+    width: 30%;
+    display: flex;
+}
+.left_section li{
+    width: 200px;
+    height: 50px;
+    flex-wrap: nowrap;
+    text-align: center;
+    line-height: 50px;
+}
+.right_section li{
+    width: 150px;
+    height: 50px;
+    flex-wrap: nowrap;
+    text-align: center;
+    line-height: 50px;
+}
+.left_section li:hover, .right_section li:hover, .left_section li:hover a, .right_section li:hover a{
+    background-color: #fff;
+    color: #333;
+}
