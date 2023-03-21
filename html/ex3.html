@@ -109,6 +109,52 @@
             width: 200px;
             height: 200px;
         }
+        html {
+            height: 100%;
+            background-image: url(../src/image/papaya.png);
+            /* 
+                background-repeat:
+                    no-repeat: 不重复
+                    repeat: 重复
+                    repeat-x: 水平重复
+                    repeat-y: 垂直重复
+                    space: 重复，但是间距相等
+                    round: 重复，但是图片大小相等
+
+                background-position:
+                    left top: 左上角
+                    left center: 左中
+                    left bottom: 左下
+                    center top: 中上
+                    center center: 中中
+                    center bottom: 中下
+                    right top: 右上
+                    right center: 右中
+                    right bottom: 右下
+                    x% y%: x%为距离左边的距离，y%为距离上边的距离
+                    xpx ypx: xpx为距离左边的距离，ypx为距离上边的距离
+
+                background-clip:
+                    border-box: 背景图片的边框与元素的边框重合
+                    padding-box: 背景图片的边框与元素的padding边框重合
+                    content-box: 背景图片的边框与元素的content边框重合
+
+                background-origin:
+                    border-box: 背景图片的原点在元素的边框上
+                    padding-box: 背景图片的原点在元素的padding边框上
+                    content-box: 背景图片的原点在元素的content边框上
+
+                background-size:
+                    auto: 自动
+                    cover: 把图片完整的显示在元素中，可能会有部分图片不显示
+                    contain: 完整显示图片，但是图片可能会被拉伸
+                    x% y%: x%为宽度的百分比，y%为高度的百分比
+                    xpx ypx: xpx为宽度的像素，ypx为高度的像素
+            */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 300px 300px; 
+        }
     </style>
 </head>
 
