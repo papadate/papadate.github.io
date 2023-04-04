@@ -3,19 +3,28 @@
     height: 100%;
     border-right: 1px solid #000;
     background-color: #bfa;
+    line-height: 30px;
 }
 #right_box{
     width:30%;
     height: 100%;
     background-color: bisque;
-    overflow: scroll;
+    overflow: auto;
 }
 #container{
     width: 100%;
-    height: 1000px;
+    height: 500px;
     background-color: #000;
     display: flex;
 }
 #mark{
     width:35px
+}
+#submit{
+    width: 100px;
+    height: 30px;
+
+    border-radius: 5px;
+    font-size: 20px;
+
 }
