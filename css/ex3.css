@@ -9,7 +9,7 @@
     width:30%;
     height: 100%;
     background-color: bisque;
-    overflow: auto;
+    overflow-y: scroll;
 }
 #container{
     width: 100%;
