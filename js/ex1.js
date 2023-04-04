@@ -46,3 +46,21 @@ var num1 = 99999, num2 = 5, num3 = 7;
 var max = getMax(num1, num2);
 max = getMax(max, num3);
 console.log(max);
+document.write('A');
+document.write('<br/>');
+document.write('B');
+document.write('<br/>');
+
+for (var first = 1; first <=9; first++)
+{
+    for (var second = 1; second <= first; second++)
+    {
+        document.write(first + '*' + second + '=' + first * second + '\t');
+    }
+    document.write('<br/>');
+}
+var name1 = (function()
+{
+    return prompt('What is your name?');
+})();
+document.write(name1);
