@@ -16,7 +16,7 @@ function upload_fun(choice, score)
     setTimeout(function()
     {
         right_box.style.backgroundColor = "rgb(255, 228, 196)";
-    }, 100);
+    }, 5);
 }
 function getChoice(labels)
 {
@@ -57,8 +57,8 @@ window.onload = function()
 
     var preloader = function()
     {
-        var choices = new Array(200);
-        var scores = new Array(200);
+        var choices = new Array(500);
+        var scores = new Array(500);
         for(var i = 0; i < choices.length; i++)
         {
             (function(arg)
@@ -87,7 +87,7 @@ window.onload = function()
                     document.getElementById("mark").value = scores[i];
                     getChoice(labels);
                     console.log(arg);
-                }, i * 600);
+                }, i * 200);
             }(i))
         }
     }();
