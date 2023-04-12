@@ -7,6 +7,18 @@
     <title>轮播图</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/slideshow.css">
+    <script>
+        window.onload = function()
+        {
+            var qrCode = document.getElementById("qrCode");
+            var img_box = document.getElementById("img_box");
+            var navigator = document.getElementById("navigator");
+
+            // initialize the location of qrCode -> left-bottom corner of the img_box
+            qrCode.style.left = 4 + img_box.offsetLeft + "px";
+            qrCode.style.top = -4 +img_box.offsetTop + img_box.offsetHeight - qrCode.offsetHeight + "px";
+        }
+    </script>
 </head>
     <body>
         <!-- set a box to hold elements -->

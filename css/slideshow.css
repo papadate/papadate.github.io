@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 #box{
-    width: 505px;
+    width: 405px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -12,7 +12,7 @@ body{
 }
 #img_box{
     width: 90%;
-    height: 668px;
+    height: 568px;
     margin: 0 auto;
     position: relative;
     /* overflow: hidden; */
@@ -32,4 +32,11 @@ body{
     width: 90px;
     height: 30px;
     border-radius: 10px;
+}
+#qrCode{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    background-color: black;
 }
