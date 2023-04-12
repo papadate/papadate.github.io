@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>轮播图</title>
     <link rel="stylesheet" href="../css/reset.css">
-    
+    <link rel="stylesheet" href="../css/slideshow.css">
 </head>
     <body>
-        
+        <!-- set a box to hold elements -->
+        <!-- 1. div -> img
+             2. a list of navigator
+             3. last img button
+             4. next img button -->
+        <div id="box">
+            <!-- container for img -->
+            <div id="img_box">
+
+            </div>
+            <!-- container for navigator -->
+            <ul id="navigator">
+            </ul>
+            <!-- container for last and next button -->
+            <div id="controller"> 
+                <!-- go back -->
+                <input type="button" value="上一张" id="last">
+                <!-- go forward -->
+                <input type="button" value="下一张" id="next">
+            </div>
+        </div>
     </body>
 </html>
