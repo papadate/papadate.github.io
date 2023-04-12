@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>move</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        window.onload = function()
+        {
+            var box1 = document.getElementById("box1");
+            var speed = 10;
+
+
+            document.onkeydown = function(e)
+            {
+                var e = e || window.event;
+                var code = e.keyCode || e.which;
+                if(e.shiftKey)
+                {
+                    speed = 50;
+                    console.log("shift");
+                }
+                switch(code)
+                {
+                    case 37:
+                        box1.style.left = box1.offsetLeft - speed + "px";
+                        console.log("left");
+                        break;
+                    case 38:
+                        box1.style.top = box1.offsetTop - speed + "px";
+                        console.log("up");
+                        break;
+                    case 39:
+                        box1.style.left = box1.offsetLeft + speed + "px";
+                        console.log("right");
+                        break;
+                    case 40:
+                        box1.style.top = box1.offsetTop + speed + "px";
+                        console.log("down");
+                        break;
+                }
+            };
+        }
+    </script>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>
