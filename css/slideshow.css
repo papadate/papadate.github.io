@@ -3,15 +3,16 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    /* background: #000; */
+    background: rgba(187, 255, 170, 0.308);
 }
 #img_box{
-    width: 607px;
-    height: 768px;
+    width: 500px;
+    height: 668px;
     position: relative;
     /* overflow: hidden; */
-    background: #000;
+    background: #c57a7a;
     margin: 0 auto;
+    border: 4px solid rgba(187, 255, 170, 0.818);
 }
 #controller{
     width: 607px;
@@ -20,13 +21,10 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    flex-grow: 1;
+    z-index: 999;
 }
-#last{
+#controller input{
     width: 90px;
     height: 30px;
-}
-#next{
-    width: 90px;
-    height: 30px;
+    border-radius: 10px;
 }
