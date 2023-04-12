@@ -11,15 +11,17 @@
         window.onload = function()
         {
             var qrCode = document.getElementById("qrCode");
-            var img_box = document.getElementById("img_box");
+            var img_list = document.getElementById("img_list");
             var navigator = document.getElementById("navigator");
 
             // initialize the location of qrCode -> left-bottom corner of the img_box
             qrCode.style.left = 4 + img_box.offsetLeft + "px";
             qrCode.style.top = -4 +img_box.offsetTop + img_box.offsetHeight - qrCode.offsetHeight + "px";
 
-            //import the images
+            img_list.imgSize = 7;
+            img_list.current = 0;
 
+            // initialize the navigator
         }
     </script>
 </head>
@@ -33,14 +35,52 @@
         <div id="box">
             <!-- container for img -->
             <div id="img_box">
-                <img src="../src/image/slide_show/1.webp" alt="1">
+                <ul id="img_list">
+                    <li><img src="../src/image/slide_show/1.webp" alt="1"></li>
+                    <li><img src="../src/image/slide_show/2.webp" alt="2"></li>
+                    <li><img src="../src/image/slide_show/3.webp" alt="3"></li>
+                    <li><img src="../src/image/slide_show/4.webp" alt="4"></li>
+                    <li><img src="../src/image/slide_show/5.webp" alt="5"></li>
+                    <li><img src="../src/image/slide_show/6.webp" alt="6"></li>
+                    <li><img src="../src/image/slide_show/7.webp" alt="7"></li>
+                </ul>     
             </div>
             <!-- container for navigator -->
             <ul id="navigator">
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
             </ul>
             <!-- Qrcode div -->
             <div id="qrCode">
-
+                <ul>
+                    <li><img src="../src/image/slide_show/QrCode/1.png" alt="qrcode"></li>
+                    <li><img src="../src/image/slide_show/QrCode/2.png" alt="qrcode"></li>
+                    <li><img src="../src/image/slide_show/QrCode/3.png" alt="qrcode"></li>
+                    <li><img src="../src/image/slide_show/QrCode/4.png" alt="qrcode"></li>
+                    <li><img src="../src/image/slide_show/QrCode/5.png" alt="qrcode"></li>
+                    <li><img src="../src/image/slide_show/QrCode/6.png" alt="qrcode"></li>
+                    <li><img src="../src/image/slide_show/QrCode/7.png" alt="qrcode"></li>
+                </ul>
+                
             </div>
             <!-- container for last and next button -->
             <div id="controller"> 
