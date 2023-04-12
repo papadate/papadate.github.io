@@ -16,12 +16,24 @@
 
             // initialize the location of qrCode -> left-bottom corner of the img_box
             qrCode.style.left = 4 + img_box.offsetLeft + "px";
-            qrCode.style.top = -4 +img_box.offsetTop + img_box.offsetHeight - qrCode.offsetHeight + "px";
+            qrCode.style.top = -5 +img_box.offsetTop + img_box.offsetHeight - qrCode.offsetHeight + "px";
 
             img_list.imgSize = 7;
             img_list.current = 0;
 
-            // initialize the navigator
+            console.log(1);
+            for(var i = 0; i < img_list.imgSize; i++)
+            {
+                // console.log(2);
+                var fun = function(arg){
+                    console.log(arg);
+                    navigator.children[arg].firstElementChild.onclick = function()
+                    {
+                        console.log(arg);
+                        img_list.style.top = -((466+5)*arg) + "px";
+                    }
+                }(i);
+            }
         }
     </script>
 </head>
@@ -73,12 +85,6 @@
             <div id="qrCode">
                 <ul>
                     <li><img src="../src/image/slide_show/QrCode/1.png" alt="qrcode"></li>
-                    <li><img src="../src/image/slide_show/QrCode/2.png" alt="qrcode"></li>
-                    <li><img src="../src/image/slide_show/QrCode/3.png" alt="qrcode"></li>
-                    <li><img src="../src/image/slide_show/QrCode/4.png" alt="qrcode"></li>
-                    <li><img src="../src/image/slide_show/QrCode/5.png" alt="qrcode"></li>
-                    <li><img src="../src/image/slide_show/QrCode/6.png" alt="qrcode"></li>
-                    <li><img src="../src/image/slide_show/QrCode/7.png" alt="qrcode"></li>
                 </ul>
                 
             </div>
