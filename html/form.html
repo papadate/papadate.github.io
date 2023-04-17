@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function()
+        {
+            var input_value = document.getElementById("input_value");
+            var submit = document.getElementById("submit");
+
+            submit.onclick = function()
+            {
+                var value = input_value.value;
+                if(value == "")
+                {
+                    alert("请输入金额");
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="./form.php" method="get">
+        <label>
+            您要存储的金额是：
+            <input type="number" name="value" id="input_value">
+        </label>
+        <input type="submit" id="submit">
+    </form>
+</body>
+
+</html>
