@@ -1,123 +1,53 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Home page</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/box_html.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <div id="top_bar" class="round">
-        <!-- profile photo -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        /* 样式可以根据需要进行调整 */
+        .song-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .song-item {
+            cursor: pointer;
+            padding: 10px;
+        }
+        .song-item:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Player</h1>
+    <ul class="song-list">
+        <li class="song-item" onclick="playSong('song1.mp3')">Song 1</li>
+        <li class="song-item" onclick="playSong('song2.mp3')">Song 2</li>
+        <li class="song-item" onclick="playSong('song3.mp3')">Song 3</li>
+    </ul>
 
-        <div id="block1" class="block"></div>
-        <nav id="profile_photo" class="float">
-            <a href="https://github.com/papadate">
-                <img src="./src/image/profile_photo.jpeg" alt="photo">
-            </a>
-        </nav>
-        <div id="block1" class="block"></div>
+    <audio id="audioPlayer" controls>
+        Your browser does not support the audio element.
+    </audio>
 
-
-        <!-- Name / Description -->
-        <div id="name_des" class="block float">
-            <ul>
-                <!-- name -->
-                <li>
-                    <div id="div_name">
-                        <p>
-                            <a id="name" href="https://github.com/papadate">Papadate</a>
-                        </p>
-                    </div>
-                </li>
-                <!-- description -->
-                <li>
-                    <div id="div_des">
-                        <p id="des">Pour my hear into any tiny things!~</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!-- test feature -->
-        <div id="div_test">
-            <button id="test_button" onclick="test()">测试</button>
-            <script>
-                function test() {
-                    window.location.href = "./html/ex3.html";
-                }
-            </script>
-        </div>
-    </div>
-    <!-- main block -->
-    <div id="main">
-        <div class="side2">
-            <div id="side_title" class="float side">
-                <p>侧 边 栏</p>
-            </div>
-            <div id="side_content" class="float">
-                <div>
-                    <a href="index.html" title="主页">
-                        <p>主页</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./blog/index_blog.html" title="正式版网页">
-                        <p>先行测试版网页</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="html/TestPage.html" title="测试段">
-                        <p>测试端主页</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="html/map.html" title="地图">
-                        <p>私人 Google 地图</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./html/exercise_3.html" title="JavaScript">
-                        <p>JavaScript</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./html/slideshow.html" title="轮播图">
-                        <p>轮播图</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="./html/move.html" title="move">
-                        <p>JS 动画测试</p>
-                    </a>
-                </div>
-            </div>
-            <div id="music_name">
-                <p>音乐： 爱情买卖</p>
-            </div>
-            <div id="music">
-                <audio id="source" src="./src/audio/love trade.mp3"></audio>
-                <div id="button_div">
-                    <button class="music_control" onclick="playme()">播放</button>
-                    <button class="music_control" onclick="pauseme()">暂停</button>
-                </div>
-               
-               <script>
-                var music = document.getElementById("source");
-                // music.preload();
-                function playme()
-                {
-                    music.play();
-                }
-                function pauseme()
-                {
-                    music.pause();
-                }
-               </script>
-            </div>
-        </div>
+    <script>
+        function playSong(songSrc) {
+            var audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.src = songSrc;
+            audioPlayer.play();
+        }
+    </script>
 </body>
+</html>
 
+</body>
 </html>
